@@ -1,3 +1,5 @@
+import { NewNotes } from '@/components/pages/home/new-notes';
+import { Notes } from '@/components/pages/home/notes';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
@@ -7,7 +9,8 @@ export const Route = createFileRoute('/')({
 function Index() {
   return (
     <div className='p-2'>
-      <h3>Welcome Home!</h3>
+      <NewNotes />
+      <Notes />
     </div>
   );
 }
